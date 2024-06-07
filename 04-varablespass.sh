@@ -1,8 +1,8 @@
 #!/bin/bash
-$No1
-$No2
+$var1
+$var2
 
-echo "$No1:Hello $No2 How are you?"
-echo "$No2:Hi $No1, Iam fine How are you?"
-echo "$No1:Yeah iam fine $No2, how is Your project going?"
-echo "$No2:Iam working on Project it is almost done."
+echo "$var1:Hello $var2,how are you"
+echo "$var2:Hi $var1,Iam fine How are you?"
+echo "$var1:Iam fine how is your work"
+echo "$var2:not bad iam thinking to upgrader Devops"
