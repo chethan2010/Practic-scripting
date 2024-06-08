@@ -12,10 +12,9 @@ then
     exit 1
 else
     echo "You are Super user"
-    exit 1
 fi
 
-yum install mysql-y
+ yum install mysql-y
 
 if [$? -ne 0]
 then
