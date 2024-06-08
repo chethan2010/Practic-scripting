@@ -3,7 +3,7 @@
 UserID=$(id -u)
 TimeStamp=$(date +%F-%H-%M-%S)
 Script_Name=$(echo $0 | cut -d '.' -f1)
-Log_file= /tmp/$Script_Name-$TimeStamp
+#Log_file=/tmp/$Script_Name-$TimeStamp
 $Script_Name-$TimeStamp.log
 
 
@@ -26,8 +26,8 @@ else
 fi
 echo "Script is "
 
-dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "Installing MySQL"
+# dnf install mysql -y &>>$LOGFILE
+# VALIDATE $? "Installing MySQL"
 
-dnf install git -y &>>$LOGFILE
-VALIDATE $? "Installing Git"
+# dnf install git -y &>>$LOGFILE
+# VALIDATE $? "Installing Git"
