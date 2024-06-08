@@ -14,25 +14,12 @@ else
     echo "You are Super user"
 fi
 
- yum install mysql-y
-
+dnf install git -y
 if [$? -ne 0]
-then
-    echo "Installtion of mysql is ..Failure"
+then 
+    echo "Installation of Git is Failed"
     exit 1
-else
-    echo "Insrallation mysql is success"
-    exit
+else 
+    echo "Installation of Git is Success"
+    exit 1
 fi
-
-#dnf install git -y
-# if [$? -ne 0]
-# then 
-#     echo "Installation of Git is Failed"
-#     exit 1
-
-# else 
-
-#     echo "Installation of Git is Success"
-#     exit 1
-# fi
