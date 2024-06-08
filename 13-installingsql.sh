@@ -11,7 +11,7 @@ else
     exit1
 fi
 
-#dnf insall mysql -y
+dnf insall mysql -y
 if [ $? -ne 0 ]
 then
    echo "Installaion of MySql is Failed"
