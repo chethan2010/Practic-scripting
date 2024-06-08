@@ -12,13 +12,14 @@ N="\e[e0m"
 
 echo "Script Stated Executing:$TimeStamp"
 
+VALIDATE(){
 if [ $1 -ne 0 ]
 then
     echo -e "$2..$G failure$N"
 else
     echo -e "$2..$R Success$N"
-
-
+fi
+}
 
 if [ $USERID -ne 0]
 then 
@@ -31,7 +32,7 @@ fi
 dnf install mysqll -y &>>$Log_file
 VALIDATE $? "Installing Mysql"
 
-dnf install gitt -y &>>Log_file
+dnf install gitt -y &>>$Log_file
 VALIDATE $? "Installing git"
 
 
