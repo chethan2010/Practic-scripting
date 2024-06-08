@@ -21,5 +21,5 @@ then
     exit 1
 else 
     echo "Installation of Git is Success"
-    exit 1
+
 fi
