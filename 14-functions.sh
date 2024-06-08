@@ -12,11 +12,9 @@ then
     exit 1
 else
     echo "$2.. Success"
-    exit 1
-
+    
 fi
 }
-
 if [ $USERID -ne 0 ]
 then
     echo "Please run this script with root access."
