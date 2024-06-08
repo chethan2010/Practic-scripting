@@ -15,7 +15,7 @@ else
 fi
 
 dnf install gittt -y
-if [$? -ne 0]
+if [ $? -ne 0 ]  
 then 
     echo "Installation of Git is Failed"
     exit 1
@@ -23,3 +23,5 @@ else
     echo "Installation of Git is Success"
 
 fi
+
+echo "Is script Processding"
