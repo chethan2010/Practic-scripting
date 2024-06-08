@@ -27,7 +27,7 @@ fi
 echo "Script is "
 
 # dnf install mysql -y &>>$LOGFILE
-# VALIDATE $? "Installing MySQL"
+ VALIDATE $? "Installing MySQL"
 
-# dnf install git -y &>>$LOGFILE
-# VALIDATE $? "Installing Git"
+dnf install git -y &>>$LOGFILE
+VALIDATE $? "Installing Git"
