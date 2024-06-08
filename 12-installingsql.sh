@@ -15,7 +15,7 @@ else
     exit 1
 fi
 
-#dnf install mysql-y
+dnf install mysql-y
 
 if [$? -ne 0]
 then
