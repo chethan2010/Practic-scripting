@@ -11,13 +11,13 @@ else
     exit1
 fi
 
-dnf insall mysql -y
+sudo dnf  -y
 if [ $? -ne 0 ]
 then
-   echo "Installaion of MySql is Failed"
+   echo "Installaion of dnf is Failed"
    exit 1
 else
 
-    echo "Installation Mysql is sucess"
+    echo "Installation dnf is sucess"
     exit 1
 fi
