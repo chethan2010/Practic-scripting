@@ -14,7 +14,7 @@ else
     echo "You are Super user"
 fi
 
-dnf install git -y
+dnf install gittt -y
 if [$? -ne 0]
 then 
     echo "Installation of Git is Failed"
