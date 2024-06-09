@@ -9,6 +9,7 @@ R="\e[e31m"
 G="\e[e32m"
 N="\e[e0m"
 
+VALIDATE(){
 if [$1 -ne 0]
 then
     echo "$2....$R Failure $N"
@@ -16,8 +17,8 @@ then
 else
     echo "$2...$G Success $N"
 fi
-
-if [ User -ne 0 ]
+}
+if [ $User -ne 0 ]
 then
     echo "You are Not super user Please Enter Script as Super user"
     exit 1
