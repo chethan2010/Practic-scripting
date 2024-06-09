@@ -27,8 +27,8 @@ else
     echo "You are super User"
 fi
 
-dnf install msysql -y
-VALIDATE $? "Installing mysql"&>>$logfile
+dnf install msysql -y &>>$logfile
+VALIDATE $? "Installing mysql"
 
-dnf install git -y
-VALIDATE $? "installing git"&>>$logfile   
+dnf install gittt -y &>>$logfile  
+VALIDATE $? "installing git" 
