@@ -9,13 +9,15 @@ R="e\[e31m"
 G="e\[e32m"
 N="e\[e0m"
 
+echo "Script stared executing at time stamp"
+
 VALIDATE(){
 if [ $1 -ne 0 ]
 then    
-    echo "$2...$R failure $N"
+    echo -e "$2...$R failure $N"
     exit 1
 else
-    echo "S2...$G Success $N"
+    echo -e "S2...$G Success $N"
 fi
 }
 
