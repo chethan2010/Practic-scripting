@@ -10,7 +10,7 @@ G="e\[e32m"
 N="e\[e0m"
 
 VALIDATE(){
-if [ $1 -ne o ]
+if [ $1 -ne 0 ]
 then    
     echo "$2...$R failure $N"
     exit 1
@@ -27,7 +27,7 @@ else
     echo "You are super User"
 fi
 
-dnf install msysql -y &>>$logfile
+dnf install mysql -y &>>$logfile
 VALIDATE $? "Installing mysql"
 
 dnf install gittt -y &>>$logfile  
