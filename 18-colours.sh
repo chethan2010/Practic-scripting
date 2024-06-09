@@ -5,9 +5,9 @@ Time_Stamp=$(date +%F-%H-%M-%S)
 Script_Name=$(echo $0 | cut -d '.' -f1) 
 logfile=$Time_Stamp-$SCRIPT_NAME.log
 
-R="\e[e31m"
-G="\e[e32m"
-N="\e[e0m"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 echo "Script started executing at time stamp"
 
