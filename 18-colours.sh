@@ -5,11 +5,11 @@ Time_Stamp=$(date +%F-%H-%M-%S)
 Script_Name=$(echo $0 | cut -d '.' -f1) 
 logfile=$Time_Stamp-$SCRIPT_NAME.log
 
-R="e\[e31m"
-G="e\[e32m"
-N="e\[e0m"
+R="\e[e31m"
+G="\e[e32m"
+N="\e[e0m"
 
-echo "Script stared executing at time stamp"
+echo "Script started executing at time stamp"
 
 VALIDATE(){
 if [ $1 -ne 0 ]
