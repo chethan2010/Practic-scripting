@@ -22,6 +22,6 @@ fi
 
 dnf install mysqll -y
 
-dnf install giti =y
+dnf install giti -y
 
-
+echo "Script is Proceddinf"
