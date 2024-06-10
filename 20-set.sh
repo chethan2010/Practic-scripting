@@ -24,4 +24,4 @@ dnf install mysqll -y
 
 dnf install giti =y
 
-echo "Script is Proceding"
+
