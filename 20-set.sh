@@ -4,7 +4,7 @@ USERID=$(id -u)
 
 set -e
 
-function(){
+failure(){
 echo "Failed at $1:$2"
 }
 
