@@ -19,6 +19,7 @@ else
 fi
 }
 
+check_root(){
 if [ $USERID -ne 0 ]
 then
    echo "Please run your script as Super user"
@@ -26,7 +27,7 @@ then
 else
     echo "You are Super user"
 fi
-
+}
 # dnf install mysql -y &>>$Log_file
 # VALIDATE $? "INSTALLING SQL"
 
