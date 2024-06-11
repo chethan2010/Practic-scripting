@@ -3,11 +3,11 @@
 handle_error(){
 echo "error occured at  line number: $1,error command:$2"
 }
-trap -p 'handle_error ${LINENO}"$BASH_COMMAND"'ERR
+trap -p'handle_error ${LINENO}"$BASH_COMMAND"' ERR
 
 USERID=$(id -u)
 date_Stamp=$(date +%F-%H-%M-%S)
-script_Name=$(echo $0 | cud -d '.' -f1)
+script_Name=$(echo $0 | cud -t '.' -f1)
 Log_file=/tmp/$date_Stamp-$script_Name.log
 
 R="\e[31m"
