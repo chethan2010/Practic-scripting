@@ -7,7 +7,7 @@ trap 'handle_error ${LINENO}"$BASH_COMMAND"' ERR
 
 USERID=$(id -u)
 date_Stamp=$(date +%F-%H-%M-%S)
-script_Name=$(echo $0 | cud -t '.' -f1)
+script_Name=$(echo $0 | cut -d '.' -f1)
 Log_file=/tmp/$date_Stamp-$script_Name.log
 
 R="\e[31m"
