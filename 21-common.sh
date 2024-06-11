@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# handle_error(){
-# echo "error occured at  line number: $1,error command:$2"
-# }
-# trap 'handle_error ${LINENO}"$BASH_COMMAND"' ERR
-
 USERID=$(id -u)
 date_Stamp=$(date +%F-%H-%M-%S)
 script_Name=$(echo $0 | cut -d '.' -f1)
